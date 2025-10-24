@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos Globais e do Corpo */
+*{
+
+    /* Resete o cálculo do tamanho para incluir padding e borda */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+
+h1{
+
+    margin-bottom: 20px;
+    color: #1a4d2e;
+
+}
+
+/* Container Principal da Calculadora */
+.calculadora-container {
+
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+
+}
+
+/* Estilização dos Inputs (Campos de número) */
+input[type="number"]{
+
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: right;
+    width: 100%;
+    transition: border-color 0.3s;
+
+}
+
+input[type="number"]:focus {
+
+    border-color: #1a4d2e;
+    outline: none;
+
+}
+
+/* Estilo do contêiner dos Botões de Operação */
+#operacoes{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+/* Estilo dos botões */
+button{
+
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    background-color: #38761d;
+    color: white;
+
+}
+
+button:hover{
+
+    background-color: #2e6216;
+
+}
+
+button:active{
+
+    transform: scale(0.98);
+
+}
+
+/* Estilo de Resultado */
+#Resultado{
+
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #1a4d2e;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
