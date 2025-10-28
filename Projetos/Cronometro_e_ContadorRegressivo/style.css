@@ -1,0 +1,83 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+
+}
+
+.container{
+
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+#display{
+
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Monospace', monospace; /* Para manter os dígitos alinhados */
+
+}
+
+button{
+
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+
+}
+
+#startStopBtn{
+
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+#resetBtn{
+
+    background-color: #f44336;
+    color: white;
+
+}
+
+/* Estilos para o setup do Timer */
+.timer-setup{
+
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+
+}
+
+#minutesInput{
+
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+
+}
+
+#setTimerBtn{
+
+    background-color: #2196F3;
+    color: white;
+
+}
